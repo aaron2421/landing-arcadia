@@ -1,0 +1,74 @@
+body {
+  margin: 0px;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.arc-img {
+  background-color: pink;
+  /* width: 50%; */
+  /* height: 80px; */
+  height: 80px;
+  flex: 0 1 100px;
+}
+
+.nav-bar-div {
+  /* background-color: wheat; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 50%; */
+  flex: 0 1 50%;
+}
+
+ul {
+  /* background-color: cornflowerblue; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style-type: none;
+  min-width: 327.38px;
+  padding: 0px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+#phone-btn {
+  /* background-color: red; */
+  border: 1px solid yellowgreen;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 160px;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 160px;
+}
+
+main {
+  background: coral;
+}
+
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: end;
+}
