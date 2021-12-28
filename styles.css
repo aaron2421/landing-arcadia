@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: black;
+  background-color: rgba(0, 0, 255, 0.3);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
