@@ -67,8 +67,54 @@ main {
   background: coral;
 }
 
+#pt1 {
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10% 10% 10%;
+}
+
+.degradado {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 75%;
+  height: fit-content;
+  min-width: 250px;
+  padding: 1rem;
+  text-align: start;
+}
+
+.degradado > h1 {
+  margin: 0px;
+  font-size:calc(20px + 3vw);
+}
+
+.degradado > p {
+  font-size:calc(10px + 1.45vw);
+}
+
+#contact-btn {
+  background-color: greenyellow;
+  color: white;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 20px 60px 20px 60px;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 footer {
   background: wheat;
   padding: 2rem;
   text-align: end;
+}
+
+@media screen and (max-width: 600px) {
+  #pt1 {
+    display: flex;
+    align-items: center;
+  }
+
 }
