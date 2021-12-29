@@ -74,7 +74,7 @@ main {
   padding: 8% 10% 10% 10%;
 }
 
-.degradado {
+#main-info {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   width: 75%;
@@ -84,13 +84,13 @@ main {
   text-align: start;
 }
 
-.degradado > h1 {
+#main-info > h1 {
   margin: 0px;
-  font-size:calc(20px + 3vw);
+  font-size: calc(20px + 3vw);
 }
 
-.degradado > p {
-  font-size:calc(10px + 1.45vw);
+#main-info > p {
+  font-size: calc(10px + 1.45vw);
 }
 
 #contact-btn {
@@ -105,6 +105,82 @@ main {
   font-weight: bold;
 }
 
+#pt2 {
+  background-color: rgb(55, 161, 211);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+  /* height: 500px; */
+}
+
+#solutions-video {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 400px;
+  /* height: min-content; */
+}
+
+#solutions-info {
+  background-color: indianred;
+  color: white;
+  width: 100%;
+  height: fit-content;
+  min-width: 250px;
+  padding: 0px 8rem 1rem 2rem;
+  text-align: start;
+}
+
+#solutions-info > h2 {
+  margin: 0px;
+  font-size: calc(18px + 2vw);
+}
+
+#solutions-info > p {
+  font-size: calc(10px + .8vw);
+}
+
+#pt3 {
+  background-color: indigo;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+#pt3 > h2 {
+  margin-bottom: 60px;
+}
+
+#services-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.imgt {
+  background-color: rgb(255, 175, 28);
+  width: 100%;
+  height: 100px;
+}
+
+.service-info {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 footer {
   background: wheat;
   padding: 2rem;
@@ -116,5 +192,24 @@ footer {
     display: flex;
     align-items: center;
   }
+}
 
+@media screen and (max-width: 1300px) {
+  #pt2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  #solutions-video {
+    height: 35vw;
+    width: 60vw;
+    margin-bottom: 2rem;
+  }
+
+  #solutions-info {
+    width: 80%;
+    padding: 1rem;
+  }
 }
