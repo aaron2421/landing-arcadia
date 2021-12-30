@@ -151,26 +151,31 @@ main {
 }
 
 #pt3 > h2 {
-  margin-bottom: 60px;
+  margin-top: 0px;
+  margin-bottom: 2rem;
 }
 
 #services-container {
   display: flex;
-  justify-content: space-evenly;
-  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  /* padding-bottom: 4%; */
 }
 
 .service {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  flex: 0 1 320px;
+  height: 250px;
+  margin: 20px;
 }
 
 .imgt {
   background-color: rgb(255, 175, 28);
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 
 .service-info {
@@ -179,6 +184,42 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.service-info > * {
+  margin: 16px;
+}
+
+#pt4 {
+  background-color: white;
+  color: midnightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+}
+
+#pt4 > h2 {
+  font-size: calc(20px + 1vw);
+  width: 40%;
+  min-width: 300px;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+}
+
+#img4 {
+  background-color: plum;
+  width: 80%;
+  height: 300px;
+}
+
+#pt5 {
+  background-color: powderblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
 }
 
 footer {
@@ -191,6 +232,14 @@ footer {
   #pt1 {
     display: flex;
     align-items: center;
+  }
+
+  #services-container {
+    width: 100%;
+  }
+
+  #img4 {
+    width: 100%;
   }
 }
 
