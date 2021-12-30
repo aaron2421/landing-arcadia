@@ -219,7 +219,7 @@ main {
   color: black;
   display: flex;
   flex-direction: column;
-  padding: 3rem 10% 3rem 10%;
+  padding: 3rem 15% 3rem 15%;
 }
 
 #pt5 > h2 {
@@ -228,7 +228,34 @@ main {
 }
 
 #accordion-container {
-  width: 50vw;
+  width: 40vw;
+}
+
+#pt6 {
+  background-color: blanchedalmond;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 15% 0px 0px;
+}
+
+#form-container {
+  background-color: black;
+  width: 35%;
+  height: 400px;
+  padding: 3rem 3rem 1rem 3rem;
+}
+
+#arc-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+#form-btn {
+  margin-top: 20px;
 }
 
 footer {
