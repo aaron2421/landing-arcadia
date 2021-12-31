@@ -300,5 +300,20 @@ footer {
   #solutions-info {
     width: 80%;
     padding: 1rem;
+  }  
+
+  #pt6 {
+    align-items: center;
+    padding: unset;
+  }
+
+  #form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #arc-form {
+    margin: 10px;
+    width: 90%;
   }
 }
