@@ -41,12 +41,17 @@ ul {
   align-content: center;
   list-style-type: none;
   min-width: 327.38px;
-  padding: 0px;
+  margin: unset !important;
+  padding: unset !important;
 }
 
-.nav-link {
+.nav-links {
   color: white;
   text-decoration: none;
+}
+
+.nav-links:hover {
+  color: unset;
 }
 
 #phone-btn {
@@ -56,7 +61,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 160px;
   height: fit-content;
   padding: 1rem;
   border-radius: 5px;
