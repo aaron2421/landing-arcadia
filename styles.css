@@ -247,6 +247,7 @@ main {
 #form-container {
   background-color: black;
   width: 35%;
+  min-width: 400px;
   height: 400px;
   padding: 3rem 3rem 1rem 3rem;
 }
@@ -263,12 +264,54 @@ main {
 }
 
 footer {
-  background: wheat;
-  padding: 2rem;
-  text-align: end;
+  background-color: gray;
+  color: white;
+  padding: 2rem 10% 2rem 10%;
 }
 
-@media screen and (max-width: 700px) {
+#links {
+  /* background-color: red; */
+  margin-left: 80px;
+  margin-bottom: 5%;
+}
+
+#links > a {
+  text-decoration: none;
+  color: greenyellow;
+  margin-right: 120px;
+}
+
+#about {
+  /* background-color: hotpink; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#info-contacto {
+  /* background-color: indigo; */
+  width: 40%;
+  padding-top: 50px;
+}
+
+#info-redes {
+  /* background-color: indianred; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+#media-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#media-icons > a {
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
   #pt1 {
     display: flex;
     align-items: center;
@@ -283,6 +326,52 @@ footer {
   }
 
   #accordion-container {
+    width: 100%;
+  }
+
+  #pt6 {
+    align-items: center;
+    padding: unset;
+  }
+
+  #form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #arc-form {
+    margin: 10px;
+    width: 90%;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: unset;
+  }
+
+  #links > a {
+    margin: unset;
+  }
+
+  #info-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #info-redes {
     width: 100%;
   }
 }
@@ -306,18 +395,4 @@ footer {
     padding: 1rem;
   }  
 
-  #pt6 {
-    align-items: center;
-    padding: unset;
-  }
-
-  #form-container {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  #arc-form {
-    margin: 10px;
-    width: 90%;
-  }
 }
