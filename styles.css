@@ -86,7 +86,7 @@ main {
 
 #main-info > h1 {
   margin: 0px;
-  font-size: calc(20px + 3vw);
+  font-size: calc(18px + 3vw);
 }
 
 #main-info > p {
