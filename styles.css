@@ -39,6 +39,11 @@ header {
   top: 0;
   width: 100%;
   padding: 1rem;
+  z-index: 1;
+}
+
+.arc-logo {
+  width: 120px;
 }
 
 .arc-img {
@@ -85,12 +90,12 @@ ul {
 #phone-btn {
   border: 1px solid var(--green);
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: fit-content;
-  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
   border-radius: 5px;
-  min-width: 160px;
+  min-width: 210px;
+  cursor: pointer;
 }
 
 #pt1 {
@@ -165,8 +170,7 @@ ul {
 }
 
 #pt3 {
-  background-color: blue;
-  /* background-image: url("src/img/"); */
+  background-image: url("src/img/servicios-back.jpg");
   background-size: cover;
   color: white;
   display: flex;
@@ -260,17 +264,15 @@ ul {
   width: 90%;
 }
 
-#img4 {
-  background-color: rgb(0, 54, 82);
-  width: 80%;
-  height: 300px;
-}
-
 #pt5 {
-  background-color: blue;
+  background-image: url("src/img/faqs-img.png"), url("src/img/faqs-back.jpg");
+  background-position: right top, left top;
+  background-size: 75%, auto;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 3rem 15% 3rem 15%;
+  padding: 3rem 15% 8% 10%;
+  /* height: 850px; */
 }
 
 #pt5 > h2 {
@@ -323,7 +325,7 @@ select {
   padding: 8px 20px;
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
   background-color: var(--black);
   border-radius: 4px;
   box-sizing: border-box;
@@ -349,7 +351,7 @@ input[type="submit"]:hover {
 
 footer {
   background-color: var(--gray);
-  padding: 2rem 10% 10% 10%;
+  padding: 2rem 10% 5% 10%;
 }
 
 #links {
@@ -366,11 +368,11 @@ footer {
 #about {
   display: flex;
   justify-content: space-evenly;
+  height: 200px;
 }
 
 #info-contacto {
   width: 40%;
-  padding-top: 50px;
 }
 
 #info-redes {
@@ -477,11 +479,6 @@ footer {
 
   #arc-form {
     margin: 30px 0px;
-  }
-
-  ::placeholder {
-    color: white;
-    opacity: 0.8;
   }
 
   #links {
