@@ -276,7 +276,9 @@
                 target="blank"
                 ><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i
               ></a>
-              <a href="https://www.instagram.com/arcadia_almacenadoras/" target="blank"
+              <a
+                href="https://www.instagram.com/arcadia_almacenadoras/"
+                target="blank"
                 ><i class="fa fa-instagram fa-lg" aria-hidden="true"></i
               ></a>
             </div>
@@ -284,6 +286,25 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="modalForm" class="modal">
+      <!-- Modal content -->
+      <div class="modal-contents">
+        <span class="close">&times;</span>
+        <br />
+        <div id="formModalContainer">
+          <h2>Contáctanos</h2>
+          <form id="arc-form" action="">
+            <input type="text" placeholder="* Nombre completo" required />
+            <input type="text" placeholder="* Correo" required />
+            <input type="text" placeholder="* Teléfono" required />
+            <input type="text" placeholder="* Empresa" required />
+            <input type="submit" id="form-btn" value="ENVIAR" />
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
