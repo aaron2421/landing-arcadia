@@ -30,7 +30,8 @@ body {
 
 header {
   /* background-color: rgba(38, 50, 120, 0.9); */
-  background-image: url("src/img/header-back.png");
+  background-color: #161114;
+  /* background-image: url("src/img/header-back.png"); */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
