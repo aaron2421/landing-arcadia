@@ -199,14 +199,14 @@ ul {
   flex-direction: column;
   align-items: center;
   flex: 0 1 320px;
-  height: 250px;
+  /* height: 250px; */
   margin: 20px;
 }
 
 .service-img {
   /* background-color: rgb(160, 209, 255); */
-  width: 100%;
-  height: 100%;
+  width: 320px;
+  height: 215px;
 }
 
 .service-info {
@@ -219,6 +219,14 @@ ul {
 
 .service-info > * {
   margin: 16px;
+}
+
+.moreInfo {
+  cursor: pointer;
+}
+
+.info {
+  display: none;
 }
 
 #mapa {
