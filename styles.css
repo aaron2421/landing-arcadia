@@ -563,6 +563,10 @@ footer {
   #ar {
     margin-top: 20px;
   }
+
+  .modal-contents {
+    width: 90% !important;
+  }
 }
 
 @media screen and (max-width: 1300px) {
