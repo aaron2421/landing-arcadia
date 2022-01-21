@@ -4,9 +4,10 @@ var open = false;
 
 phoneBtn.onclick = () => {
   if (ancho <= 600) {
-    alert("lanza app de telefono");
+    location.href='tel:+523320350386';
   } else {
-    alert("whatsapp web");
+    // location.href="https://api.whatsapp.com/send?phone=+523320350386";
+    window.open("https://api.whatsapp.com/send?phone=+523320350386");
   }
 };
 
@@ -39,11 +40,15 @@ var serviceInfoContainer1 = document.getElementsByClassName("service-info")[1];
 moreServiceInfo1.onclick = () => {
   if (open == false) {
     open = true;
-    serviceInfoContainer1.style.alignItems = "stretch"
-    serviceInfoContainer1.style.height = "100px";
+    serviceInfoContainer1.style.display = "flex";
+    serviceInfoContainer1.style.flexDirection = "column";
+    serviceInfoContainer1.style.alignItems = "stretch";
+    serviceInfoContainer1.style.height = "auto";
     info2.style.display = "block";
   } else {
     open = false;
+    serviceInfoContainer1.style.display = "flex";
+    serviceInfoContainer1.style.flexDirection = "row";
     serviceInfoContainer1.style.alignItems = "center"
     serviceInfoContainer1.style.height = "unset";
     info2.style.display = "none";
@@ -55,18 +60,22 @@ var serviceInfoContainer2 = document.getElementsByClassName("service-info")[2];
 moreServiceInfo2.onclick = () => {
   if (open == false) {
     open = true;
-    serviceInfoContainer2.style.alignItems = "stretch"
-    serviceInfoContainer2.style.height = "100px";
+    serviceInfoContainer2.style.display = "flex";
+    serviceInfoContainer2.style.flexDirection = "column";
+    serviceInfoContainer2.style.alignItems = "stretch";
+    serviceInfoContainer2.style.height = "auto";
     info3.style.display = "block";
   } else {
     open = false;
+    serviceInfoContainer2.style.display = "flex";
+    serviceInfoContainer2.style.flexDirection = "row";
     serviceInfoContainer2.style.alignItems = "center"
     serviceInfoContainer2.style.height = "unset";
     info3.style.display = "none";
   }
 }
 
-// modal 
+// modal
 var modal = document.getElementById("modalForm");
 
 var btn = document.getElementsByClassName("contact-btn")[0];

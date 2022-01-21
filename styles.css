@@ -217,7 +217,14 @@ ul {
   width: 100%;
 }
 
-.service-info > * {
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.service-header > * {
   margin: 16px;
 }
 
@@ -227,6 +234,7 @@ ul {
 
 .info {
   display: none;
+  padding: 10px;
 }
 
 #mapa {
