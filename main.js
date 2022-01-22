@@ -4,10 +4,10 @@ var open = false;
 
 phoneBtn.onclick = () => {
   if (ancho <= 600) {
-    location.href='tel:+523320350386';
+    location.href = "tel:+523320350386";
   } else {
-    // location.href="https://api.whatsapp.com/send?phone=+523320350386";
-    window.open("https://api.whatsapp.com/send?phone=+523320350386");
+    location.href = "https://api.whatsapp.com/send?phone=+523320350386";
+    // window.open("https://api.whatsapp.com/send?phone=+523320350386");
   }
 };
 
@@ -29,11 +29,11 @@ moreServiceInfo.onclick = () => {
     open = false;
     serviceInfoContainer.style.display = "flex";
     serviceInfoContainer.style.flexDirection = "row";
-    serviceInfoContainer.style.alignItems = "center"
+    serviceInfoContainer.style.alignItems = "center";
     serviceInfoContainer.style.height = "unset";
     info1.style.display = "none";
   }
-}
+};
 
 var moreServiceInfo1 = document.getElementsByClassName("moreInfo")[1];
 var serviceInfoContainer1 = document.getElementsByClassName("service-info")[1];
@@ -49,11 +49,11 @@ moreServiceInfo1.onclick = () => {
     open = false;
     serviceInfoContainer1.style.display = "flex";
     serviceInfoContainer1.style.flexDirection = "row";
-    serviceInfoContainer1.style.alignItems = "center"
+    serviceInfoContainer1.style.alignItems = "center";
     serviceInfoContainer1.style.height = "unset";
     info2.style.display = "none";
   }
-}
+};
 
 var moreServiceInfo2 = document.getElementsByClassName("moreInfo")[2];
 var serviceInfoContainer2 = document.getElementsByClassName("service-info")[2];
@@ -69,7 +69,7 @@ moreServiceInfo2.onclick = () => {
     open = false;
     serviceInfoContainer2.style.display = "flex";
     serviceInfoContainer2.style.flexDirection = "row";
-    serviceInfoContainer2.style.alignItems = "center"
+    serviceInfoContainer2.style.alignItems = "center";
     serviceInfoContainer2.style.height = "unset";
     info3.style.display = "none";
   }
