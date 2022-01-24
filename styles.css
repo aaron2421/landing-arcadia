@@ -475,6 +475,11 @@ footer {
     padding: 1rem 0 !important;
   }
 
+  #solutions-video {
+    padding: 0;
+    margin: 0 !important;
+  }
+
   #solutions-info {
     text-align: center;
   }
