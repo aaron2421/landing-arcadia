@@ -40,7 +40,7 @@ header {
   top: 0;
   width: 100%;
   padding: 1rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .arc-logo {
@@ -313,6 +313,10 @@ ul {
 
 .accordion-body {
   color: var(--black);
+}
+
+.accordion-button:focus {
+  z-index: 1 !important;
 }
 
 #pt6 {
