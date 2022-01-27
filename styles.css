@@ -315,6 +315,20 @@ ul {
   color: var(--black);
 }
 
+.accordion-body > div {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.accordion-body > div > i {
+  padding: 5px;
+}
+
+.accordion-body > div > * {
+  color: black;
+  margin: 0;
+}
+
 .accordion-button:focus {
   z-index: 1 !important;
 }
