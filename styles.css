@@ -315,10 +315,6 @@ ul {
   background-color: var(--green) !important;
 }
 
-.accordion-body {
-  /* color: var(--black); */
-}
-
 .accordion-body > div {
   display: flex;
   margin-bottom: 6px;
