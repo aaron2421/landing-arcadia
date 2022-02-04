@@ -3,6 +3,7 @@
   --secBlue: #174d97;
   --compBlue: #cad4d5;
   --green: #6fb74c;
+  --greenHover: #538937;
   --black: #161114;
   --gray: #3a3a3a;
 }
@@ -135,6 +136,11 @@ ul {
   margin-top: 60px;
   font-size: 20px;
   font-weight: bold;
+  transition: all 0.6s;
+}
+
+.contact-btn:hover {
+  background-color: var(--greenHover);
 }
 
 #pt2 {
@@ -215,9 +221,11 @@ ul {
 .service-info {
   background-color: var(--green);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .service-header {
@@ -225,19 +233,25 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .service-header > * {
   margin: 16px;
 }
 
-.moreInfo {
-  cursor: pointer;
+.info {
+  overflow: hidden;
+  background-color: var(--green);
+  max-height: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
-.info {
-  display: none;
+.service-info:hover > .info {
+  max-height: 180px;
   padding: 10px;
+  display: flex;
 }
 
 #mapa {
@@ -403,11 +417,12 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.6s;
 }
 
-/* input[type="submit"]:hover {
-  background-color: #45a049;
-} */
+input[type="submit"]:hover {
+  background-color: var(--greenHover);
+}
 
 footer {
   background-color: var(--gray);
