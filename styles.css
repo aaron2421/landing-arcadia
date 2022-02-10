@@ -368,13 +368,13 @@ ul {
 }
 
 #pt6 {
-  display: none;
-  /* background-image: url("src/img/form-back.png");
+  /* display: none; */
+  background-image: url("src/img/form-back.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 0px 15% 0px 0px; */
+  padding: 0px 15% 0px 0px;
 }
 
 #form-container {
