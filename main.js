@@ -1,6 +1,8 @@
 var phoneBtn = document.getElementById("phone-btn");
 var ancho = window.innerWidth;
 var open = false;
+var contactBtn = document.getElementsByClassName("contact-btn")[0];
+var contactBtn2 = document.getElementsByClassName("contact-btn")[1];
 
 phoneBtn.onclick = () => {
   if (ancho <= 600) {
@@ -11,31 +13,39 @@ phoneBtn.onclick = () => {
   }
 };
 
+contactBtn.onclick = () => {
+  location.href = "https://calendly.com/arcadia-almacenadoras/30min";
+}
+
+contactBtn2.onclick = () => {
+  location.href = "https://calendly.com/arcadia-almacenadoras/30min";
+}
+
 // modal
-var modal = document.getElementById("modalForm");
+// var modal = document.getElementById("modalForm");
 
-var btn = document.getElementsByClassName("contact-btn")[0];
-var btn2 = document.getElementsByClassName("contact-btn")[1];
+// var btn = document.getElementsByClassName("contact-btn")[0];
+// var btn2 = document.getElementsByClassName("contact-btn")[1];
 
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// };
 
-btn2.onclick = function () {
-  modal.style.display = "block";
-};
+// btn2.onclick = function () {
+//   modal.style.display = "block";
+// };
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+// span.onclick = function () {
+//   modal.style.display = "none";
+// };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
 
 // var winfo = document.getElementById("winfo");
 // winfo.innerText = window.innerWidth;
