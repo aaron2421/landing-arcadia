@@ -2,6 +2,8 @@ var phoneBtn = document.getElementById("phone-btn");
 var contactBtn = document.getElementsByClassName("contact-btn")[0];
 var contactBtn2 = document.getElementsByClassName("contact-btn")[1];
 
+var ancho = window.innerWidth;
+
 phoneBtn.onclick = () => {
   if (ancho <= 600) {
     location.href = "tel:+523320350386";
