@@ -6,9 +6,9 @@ var ancho = window.innerWidth;
 
 phoneBtn.onclick = () => {
   if (ancho <= 600) {
-    location.href = "tel:+523320350386";
+    location.href = "tel:+523343579334";
   } else {
-    location.href = "https://api.whatsapp.com/send?phone=+523320350386";
+    location.href = "https://api.whatsapp.com/send?phone=+523343579334";
   }
 };
 
