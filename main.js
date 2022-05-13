@@ -1,21 +1,19 @@
-var phoneBtn = document.getElementById("phone-btn");
-var contactBtn = document.getElementsByClassName("contact-btn")[0];
-var contactBtn2 = document.getElementsByClassName("contact-btn")[1];
+window.onload = () => {
+  var phoneBtn = document.getElementById("phone-btn");
+  var contactBtns = document.getElementsByClassName("contact-btn");
+  var ancho = window.innerWidth;
 
-var ancho = window.innerWidth;
+  phoneBtn.onclick = () => {
+    if (ancho <= 600) {
+      location.href = "tel:+523343579334";
+    } else {
+      location.href = "https://api.whatsapp.com/send?phone=+523343579334";
+    }
+  };
 
-phoneBtn.onclick = () => {
-  if (ancho <= 600) {
-    location.href = "tel:+523343579334";
-  } else {
-    location.href = "https://api.whatsapp.com/send?phone=+523343579334";
+  for(var i = 0; i<contactBtns.length; i++) {
+    contactBtns[i].onclick = () => {
+      location.href = "https://calendly.com/arcadia-almacenadoras/30min";
+    }
   }
-};
-
-contactBtn.onclick = () => {
-  location.href = "https://calendly.com/arcadia-almacenadoras/30min";
-}
-
-contactBtn2.onclick = () => {
-  location.href = "https://calendly.com/arcadia-almacenadoras/30min";
 }
