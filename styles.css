@@ -83,7 +83,7 @@ ul {
 .nav-links {
   color: white;
   text-decoration: none;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .nav-links:hover {
@@ -99,7 +99,7 @@ ul {
   border-radius: 5px;
   min-width: 210px;
   cursor: pointer;
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 #phone-btn:hover {
@@ -696,4 +696,9 @@ footer {
   color: var(--secBlue);
   text-decoration: none;
   cursor: pointer;
+}
+
+.linkPhone {
+  color: #aaaaaa !important;
+  text-decoration: underline;
 }
